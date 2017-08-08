@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule assets/(.*)$ application/views/assets/$1 [L]
+RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|sitemap\.xml\.gz|cronjob\.php)
+RewriteRule ^(.*)$ index.php/$1 [L]
